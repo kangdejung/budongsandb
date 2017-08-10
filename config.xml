@@ -14,8 +14,9 @@
 
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
 	<gap:plugin name="cordova-plugin-inappbrowser" source="npm"  />
-	<plugin name="org.apache.cordova.device" spec="0.2.3" source="pgb" />
-	
+	<feature name="Device">
+		<param name="android-package" value="org.apache.cordova.device.Device" />
+	</feature>
 	<allow-navigation href="*" />
 	<icon src="icon.png" />
 	<content src="index.html" />
