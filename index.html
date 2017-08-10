@@ -6,14 +6,11 @@
 <meta charset="utf-8">
 <script src="cordova.js"></script>
 <script type="text/javascript">
+	document.addEventListener("deviceready", onDeviceReady, false);
 
-document.addEventListener("deviceready", onDeviceReady, false);
-
-function onDeviceReady() {
-	alert(1);
-	alert(device.uuid);
-	window.location.href = "http://budongsandb.dungzi.com/mobile/index/"+device.uuid+"?mobile=1";
-}	
+	function onDeviceReady() {
+		window.location.href = "http://budongsandb.dungzi.com/mobile/index/"+device.uuid+"?mobile=1";
+	}	
 </script>
 <body  onload="onLoad()">
 </body>
