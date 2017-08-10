@@ -14,6 +14,7 @@
 
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
 	<gap:plugin name="cordova-plugin-inappbrowser" source="npm"  />
+	<plugin name="org.apache.cordova.device" spec="0.2.3" source="pgb" />
 	
 	<allow-navigation href="*" />
 	<icon src="icon.png" />
